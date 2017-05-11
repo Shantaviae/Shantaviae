@@ -9,4 +9,5 @@ html, body, #wrapper {
 #wrapper td {
    vertical-align: middle;
    text-align: center;
+   background-color: #d9d9d9;
 }
