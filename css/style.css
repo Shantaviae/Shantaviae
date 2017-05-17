@@ -20,14 +20,14 @@ body{
 }
 /*-- banner --*/
 .banner{
-	background: url(../images/1.jpg) no-repeat 0px 0px;
+	background: url(../images/1b.jpg) no-repeat 0px 0px;
     background-size: cover;
     padding: 3em 0 4em;
 }
 /*-- header-left --*/
 .header {
     background: rgba(0, 0, 0, 0.6);
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 .header-left{
 	float: left;
@@ -42,6 +42,7 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
 }
 .w3layouts-logo h1 a span{
 	font-weight:100;
@@ -49,7 +50,7 @@ body{
 /*-- //header-left --*
 /*-- top-nav --*/
 .top-nav{
-    margin: .5em 0 0 0;
+    margin: .75em 0 0 0;
     float: right;
 }
 .top-nav ul{
@@ -171,14 +172,14 @@ ul.dropdown-menu {
 }
 .agileits-banner-info h3{
     color: #FFFFFF;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Allerta', sans-serif;
     font-size: 7em;
     margin: 0;
 }
 .agileits-banner-info h3 span{
     display: block;
-    font-size: .15em !important;
-    margin: 2.5em 0 1em 0;
+    font-size: .4em !important;
+    margin: 0.5em 0 1em 0;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 12px;
@@ -384,7 +385,7 @@ ul.dropdown-menu {
 	float:left;
 	width:10%;
 }
-.bottom-icon i.fa.fa-cog,.bottom-icon i.fa.fa-thumbs-up,.bottom-icon i.fa.fa-user{
+.bottom-icon i.fa.fa-cog,.bottom-icon i.fa.fa-map-marker,.bottom-icon i.fa.fa-gears,.bottom-icon i.fa.fa-flash{
     color: #1b75bb;
     font-size: 1.5em;
 }
@@ -541,7 +542,7 @@ ul.dropdown-menu {
     font-size: 2em;
     margin: 0;
     font-weight: 100;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Allerta', sans-serif;
     letter-spacing: 2px;
 }
 .w3ls-welcome-right-info h2 span,.w3-agileits-heading h3 span{
@@ -571,6 +572,9 @@ ul.dropdown-menu {
 }
 .agileinfo-yellow{
     background: #FFC107;
+}
+.agileinfo-grey{
+    background: #ececec;
 }
 /*-- //welcome --*/
 /*-- services --*/
@@ -888,7 +892,7 @@ h3.agileits-icons-title {
     font-size: 2em;
     color: #2f2f2f;
     margin: 0;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Allerta', sans-serif;
     letter-spacing: 1px;
 }
 .icons a {
@@ -1529,7 +1533,7 @@ h2.typoh2{
 .agileits-contact-address ul li i.fa.fa-phone,.agileits-contact-address ul li i.fa.fa-map-marker {
     height: 40px;
     width: 40px;
-    background: #f35041;
+    background: #1b75bb;
     line-height: 40px;
     text-align: center;
     color: #FFF;
@@ -1584,7 +1588,7 @@ h2.typoh2{
     margin-bottom: 1em;
 }
 button.btn1{
-	border: solid 2px #f35041;
+	border: solid 2px #1b75bb;
     color: #ffffff;
     font-size: .875em;
     background: #1b75bb;
