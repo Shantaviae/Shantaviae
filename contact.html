@@ -27,6 +27,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_CWmDJiEdT9LklHX5Z9deX");
+   })();
+</script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
@@ -34,6 +40,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+
+	function submitForm(Name, Email, Telephone, Message) {
+		// parameters: service_id, template_id, template_parameters
+		emailjs.send("shantaviae_wynn","contact_us",{from_name: Name.value, from_email: Email.value,from_phone: Telephone.value, message_html: Message.value})
+		.then(function(response) {
+			 console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+		}, function(err) {
+			 console.log("FAILED. error=", err);
+		});
+	}
 </script>
 </head>
 <body>
@@ -100,15 +116,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3>Send us a message</h3>
 					</div>
 					<div class="agileinfo-contact-form-grid">
-						<form action="#" method="post">
+						<form method="post" onSubmit="return submitForm(Name, Email, Telephone, Message)">
 							<input type="text" name="Name" placeholder="Name" required="">
 							<input type="email" name="Email" placeholder="Email" required="">
 							<input type="text" name="Telephone" placeholder="Telephone" required="">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
 							<button class="btn1">Submit</button>
 						</form>
-
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3s69UHPRTRE9PNQahHdkcMWJI3N-usVnjTrebDyeh6xV7Zw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
