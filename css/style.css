@@ -722,7 +722,7 @@ footer{
     margin: 0;
     line-height: 1.8em;
 }
-.footer-bottom-right input[type="text"] {
+.footer-bottom-right .mc-field-group input[type="text"] {
     display: inline-block;
     background: #FFFFFF;
     border: none;
@@ -733,7 +733,7 @@ footer{
     font-size: .9em;
     color: #999999;
 }
-.footer-bottom-right input[type="email"] {
+.footer-bottom-right .mc-field-group input[type="email"] {
     display: inline-block;
     background: #FFFFFF;
     border: none;
@@ -746,7 +746,7 @@ footer{
 
 }
 
-.footer-bottom-right input[type="submit"] {
+.footer-bottom-right .mc-field-group input[type="submit"] {
     outline: none;
     color: #FFFFFF;
     padding: .4em 1em;
