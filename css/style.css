@@ -733,6 +733,19 @@ footer{
     font-size: .9em;
     color: #999999;
 }
+.footer-bottom-right input[type="email"] {
+    display: inline-block;
+    background: #FFFFFF;
+    border: none;
+    width: 100%;
+    margin: 1em 0 0 0;
+    outline: none;
+    padding: .5em;
+    font-size: .9em;
+    color: #999999;
+
+}
+
 .footer-bottom-right input[type="submit"] {
     outline: none;
     color: #FFFFFF;
