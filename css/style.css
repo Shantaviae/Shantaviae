@@ -20,7 +20,7 @@ body{
 }
 /*-- banner --*/
 .banner{
-	background: url(../images/1b.jpg) no-repeat 0px 0px;
+	background: url(../images/test.jpg) no-repeat 0px 0px;
     background-size: cover;
     padding: 3em 0 4em;
 }
@@ -591,7 +591,7 @@ ul.dropdown-menu {
 	text-align: center;
     padding: 3em;
 }
-.w3-agileits-services-grid i.fa.fa-cogs,.w3-agileits-services-grid i.fa.fa-comments,.w3-agileits-services-grid i.fa.fa-heart,.w3-agileits-services-grid i.fa.fa-plane,.w3-agileits-services-grid i.fa.fa-paper-plane,.w3-agileits-services-grid i.fa.fa-road{
+.w3-agileits-services-grid i.fa.fa-balance-scale,.w3-agileits-services-grid i.fa.fa-heartbeat,.w3-agileits-services-grid i.fa.fa-unlock-alt,.w3-agileits-services-grid i.fa.fa-group,.w3-agileits-services-grid i.fa.fa-key,.w3-agileits-services-grid i.fa.fa-anchor{
 	color: #1b75bb;
     font-size: 2em;
 }
@@ -763,7 +763,7 @@ footer{
     color: #FFFFFF;
     text-align: center;
 }
-.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-twitter, .agileinfo-social-grids ul li a i.fa.fa-rss, .agileinfo-social-grids ul li a i.fa.fa-vk {
+.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-twitter, .agileinfo-social-grids ul li a i.fa.fa-pinterest-p, .agileinfo-social-grids ul li a i.fa.fa-instagram {
     height: 30px;
     width: 30px;
     border: solid 2px #FFFFFF;
@@ -786,12 +786,12 @@ footer{
 	background:#55acee;
 	color: #FFFFFF;
 }
-.agileinfo-social-grids ul li a i.fa.fa-rss:hover{
+.agileinfo-social-grids ul li a i.fa.fa-pinterest-p:hover{
 	border: solid 2px #f26522;
 	background:#f26522;
 	color: #FFFFFF;
 }
-.agileinfo-social-grids ul li a i.fa.fa-vk:hover{
+.agileinfo-social-grids ul li a i.fa.fa-instagram:hover{
 	border: solid 2px #45668e;
 	background:#45668e;
 	color: #FFFFFF;
