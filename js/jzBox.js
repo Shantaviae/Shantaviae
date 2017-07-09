@@ -1,7 +1,7 @@
 var jzBoxActual = null;
 
 function jzBoxMessage(actual, last) {
-    return 'Unit: ' + actual + ' / ' + last;
+    return 'Listing ' + actual + ' / ' + last;
 }
 
 $(document).on('keydown', function (event) {
@@ -39,15 +39,23 @@ $('.jzBoxLink').click(function (event) {
     $('#jzBoxTargetImg').attr('src', this.getAttribute('href'));
 
 
-    var text = this.getAttribute('title');
+    var title = this.getAttribute('title');
+    var listingLink = this.getAttribute('longdesc');
+    var size = this.getAttribute('data-size');
+    var price = this.getAttribute('data-price');
     var display = 'block';
+
+    var text = title + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + size + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + price;
 
     if (text == null) {
         text = '';
         display = 'none';
     }
 
-    $('#jzBoxTitle').text(text).css('display', display);
+    $('#jzBoxTitle').html(decodeURI(text));;
+
+    var str = "<a href='"+ listingLink + "' target='_blank'>Listing Details</a>";
+    $('#jzBoxLink').html(decodeURI(str));
 
 
     $('#jzBox').slideToggle('fast');

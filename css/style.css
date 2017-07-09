@@ -1745,6 +1745,24 @@ button.btn1:hover{
 	z-index: 10001;
 }
 
+/* unvisited link */
+#jzBoxLink a:link {
+    color: RGB(38, 169, 224);
+    font-size: 18px;
+}
+
+/* visited link */
+#jzBoxLink a:visited {
+    color: RGB(38, 169, 224);
+    font-size: 18px;
+}
+
+/* mouse over link */
+#jzBoxLink a:hover {
+    color: RGB(38, 169, 224);
+    font-size: 18px;
+}
+
 #jzBoxNextBig { left: 65%; }
 
 .close {
